@@ -1,0 +1,89 @@
+/*Tamaño carousel e imagen dentro de este*/
+.carousel-item {
+	width: 100%;
+	height: 400px;
+}
+.carousel-item img {
+	height: 100%;
+	width: 100%;
+}
+
+#Contenedor{
+	width: 200px;
+	margin: 20px auto;
+	background-color: #d7eaf9;
+    border: #0e69b0;
+	height: 150px;
+	border-radius:6px;
+	padding: 0px 10px 0px 10px;
+}
+#btnlogin{
+	background-color:#1770B3;
+	color:#FFFFFF;
+	font-size: x-large;
+}
+.btn-link {
+	color: #00447C;
+}
+.button-checkbox{
+	font-size: 1.2em;
+}
+
+/**
+ * Aplicando al icono de usuario el color de fondo,
+ * rellenado de 20px y un redondeado de 120px en forma
+ * de un circulo
+ */
+.Icon span{
+background: #1770b4;
+padding: 10px;
+border-radius: 150px;
+}
+/**
+ * Se aplica al cotenedor madre un margen de tamño 10px hacia la cabecera y pie,
+ * color de fuente blanco,un tamño de fuente 50px y texto centrado.
+ */
+.Icon{
+	margin-top: 5px;
+	margin-bottom:5px;
+    color: #1770b4;
+    font-size: 75px;
+    text-align: center;
+}
+
+/**
+ * Se aplica al contenedor donde muetra
+ * la opcion de olvidades tu contraseña
+ */
+.opcioncontra{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+/**
+ * EN las siguientes lineas
+ * se define el diseño en el que
+ * se mostrara en los dispositivos moviles
+ */
+
+/******************************************/
+/***    DISEÑO PARA MOVILES 320        ****/
+/******************************************/
+@media only screen and (max-width:320px) {
+
+}
+#Contenedor{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+
+/******************************************/
+/***    DISEÑO PARA MOVILES 240        ****/
+/******************************************/
+@media only screen and (max-width:240px){
+	
+}
+
+
