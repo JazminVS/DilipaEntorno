@@ -1,4 +1,4 @@
-@extends('plantillas.departamentos')
+@extends('layouts.departamentos')
 <!--VISTA INICIO DEPARTAMENTO AUDITORIA-->
 @section('titulo_departamento')
     Departamento Auditoria

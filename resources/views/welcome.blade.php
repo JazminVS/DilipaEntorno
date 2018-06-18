@@ -74,6 +74,7 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
+
         <div class="top-right links">
             <a data-toggle="modal" data-target="#login" href="">LOG IN</a>
             <a href="{{ route('register') }}">Register</a>

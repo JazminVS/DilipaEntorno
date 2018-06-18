@@ -18,12 +18,17 @@ $this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 $this->post('password/reset', 'Auth\ResetPasswordController@reset');
 
-/*Route::middleware([auth,])->group(function () {
-    //Roles
-    Route::post('roles/store')->name('roles.store')
-        -> middleware('roles/store');
-});*/
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/auditoria_login', 'DepartamentosController@auditoria_login')->name('auditoria_login')
+        ->middleware('permission:departamentos_login.auditoria_acceso');
+    Route::get('/marketing_login', 'DepartamentosController@marketing_login')->name('marketing_login')
+        ->middleware('permission:departamentos_login.marketing_acceso');
+});
+
+
+
+//Route::get('auditoria_login', 'DepartamentosController@auditoria_login')->middleware('auth');
 
 
 

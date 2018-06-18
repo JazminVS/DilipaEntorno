@@ -28,4 +28,10 @@ class DepartamentosController extends Controller
     public function dep_sis(){
         return view('departamentos/dep_sistemas');
     }
+    public function auditoria_login(){
+        return view('departamentos_login/auditoria_acceso');
+    }
+    public function marketing_login(){
+        return view('departamentos_login/auditoria_acceso');
+    }
 }
